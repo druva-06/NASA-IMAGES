@@ -19,6 +19,7 @@ async function getCurrentImageOfTheDay(){
 }
 
 async function getImageOfTheDay(date,history){
+    nasaImg.src = '#'
     let url = `https://api.nasa.gov/planetary/apod?date=${date}&api_key=Ir2ePY4n1gOWhstRG2drV1wF7yxY9Yqd3MawDf45`
     let response = await fetch(url);
     let nasaObj = await response.json();
