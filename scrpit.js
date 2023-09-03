@@ -25,7 +25,7 @@ async function getImageOfTheDay(date,history){
     // nasaObjs[date] = nasaObj;
     if(currentDate!=date){
         heading.innerText = `Picture On ${date}`;
-        if(history == undefined)
+        if(history != false)
             saveSearch(date)
     }
     nasaImg.src = await nasaObj['url'];
@@ -51,7 +51,7 @@ function addSearchToHistory(){
 
     historyDates.forEach(element => {
         let listEle = document.createElement('li')
-        listEle.innerHTML = `<a href="">${element.date}</a>`
+        listEle.innerHTML = `<a href="#">${element.date}</a>`
         listEle.addEventListener('click',()=>{
             getImageOfTheDay(element.date,false);
         })
