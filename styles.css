@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#current-image-container{
+    background-color: black;
+    color: white;
+}
+
+#pic-heading{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+#nasa-img{
+    padding: 1%;
+    width: 98vw;
+    height: 50vh;
+}
+
+#title{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#description{
+    padding: 10px;
+}
+
+#search-form{
+    padding: 10px;
+}
+
+#search-history{
+    padding: 10px;
+    list-style-type: none;
+}
+
+li{
+    padding: 5px 0px;
+}
+
+h2{
+    padding: 10px;
+}
